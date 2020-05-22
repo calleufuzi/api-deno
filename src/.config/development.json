@@ -1,0 +1,44 @@
+{
+  "name": "development",
+  "interface": "mysql",
+  "api_prefix": "/api/v1",
+  "webserver": {
+    "redirect-https": false,
+    "version": 1.1
+  },
+
+  "auth": {
+    "client_id": "default-template",
+    "auth_url": "https://fsc01.tvglobo.com.br/adfs/oauth2/authorize",
+    "token_url": "https://fsc01.tvglobo.com.br/adfs/oauth2/token",
+    "callback_url": "http://default-template.st.tvg.net.br/auth/redirect",
+    "resource": "http://default-template.st.tvg.net.br/auth/redirect",
+    "certificate": "adfs_prod.pem",
+    "callback_route": "/redirect",
+    "bypass_login": true,
+    "bypass_platform": true,
+    "url_logout": "https://fsc01.tvglobo.com.br/adfs/ls/?wa=wsignout1.0"
+  },
+
+  "cors": {
+    "origin": ["*"],
+    "methods": ["GET", "HEAD", "PUT", "PATCH", "POST", "DELETE"]
+  },
+
+  "aws": {
+    "accountName": "",
+    "s3": {
+      "apiVersion": "2006-03-01",
+      "region": "",
+      "expires": ""
+    },
+    "sns": {
+      "apiVersion": "2010-03-31",
+      "region": ""
+    },
+    "ses": {
+      "apiVersion": "2010-03-31",
+      "region": ""
+    }
+  }
+}

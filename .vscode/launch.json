@@ -1,0 +1,24 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Deno",
+      "type": "node",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "runtimeExecutable": "deno",
+      "outputCapture": "std",
+      "runtimeArgs": [
+        "run",
+        "--inspect",
+        "-A",
+        "--allow-env",
+        "--unstable",
+        "-c",
+        "tsconfig.json",
+        "src/bin/www.ts"
+      ],
+      "port": 9229
+    }
+  ]
+}
