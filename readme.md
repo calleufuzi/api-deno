@@ -1,5 +1,8 @@
 # Deno REST API
 
+<img src="" width=300 height=300>
+
+
 ## Description:
 
 This is basic boiler plate in contruction for REST API with Deno
@@ -18,24 +21,19 @@ Duplicate .env.exemple file and rename it to .env, fill the env informations
 
 Run above commands:
 
-````
+```
+Migrate
+$ deno run --allow-net --allow-read https://deno.land/x/nessie/cli.ts migrate
 
-Create Dadabase and run ORM comands:
-
-``Migrate``
-```deno run --allow-net --allow-read https://deno.land/x/nessie/cli.ts migrate```
-
-````
+```
 
 ### Running
 
 ```
-> deno run --inspect -A --allow-env --unstable -c tsconfig.json src/bin/www.ts
+$ deno run --inspect -A --allow-env --unstable -c tsconfig.json src/bin/www.ts
 ```
 
-### Using Nessie ORM - https://github.com/halvardssm/deno-nessie
-
-## Usage
+## Using Nessie ORM - https://github.com/halvardssm/deno-nessie
 
 - `init`: Generates a `nessie.config.ts` file
 
