@@ -1,6 +1,6 @@
 # Deno REST API
 
-<img src="" width=300 height=300>
+<img src="https://deno.land/images/deno_logo_4.gif" width=300 height=300>
 
 
 ## Description:
